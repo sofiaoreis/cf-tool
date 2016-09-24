@@ -1,10 +1,3 @@
-/*
- * user.h
- *
- *  Created on: 20/09/2016
- *      Author: Fifaz
- */
-
 #ifndef USER_H_
 #define USER_H_
 
@@ -12,17 +5,20 @@
 
 using namespace std;
 
-class user {
+class User {
 
-	string id;
+	unsigned int id;
 	string age;
 	string gender;
 	string occupation;
 	string zipcode;
 
 public:
-	user(string id, string age, string gender, string occupation, string zipcode);
-	string getID()
+	//constructor of the user object
+	User(string id, string age, string gender, string occupation, string zipcode);
+
+	//method to get id from User
+	int getID()
 	{
 		return this->id;
 	}
